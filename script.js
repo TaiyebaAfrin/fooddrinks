@@ -91,7 +91,7 @@ function displayBrinks(drinks) {
 function showNoResults() {
   cFdDrinkContainer.innerHTML = `
           <div class="col-12 text-center text-muted py-5">
-            <h4>No brinks found. Try another search.</h4>
+            <h4>No drinks found</h4>
           </div>
         `;
 }
@@ -111,7 +111,7 @@ function addToFdBox(e) {
   }
 
   if (fdBoxCfdDrinks.some((drink) => drink.idDrink === drinkId)) {
-    alert("This in your chart! you have");
+    alert("This in your chart! you have in chart");
     return;
   }
 
