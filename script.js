@@ -156,7 +156,7 @@ function showDetails(e) {
     document.getElementById("inHtmlfAlcoholic").textContent =
       drink.strAlcoholic;
     document.getElementById("inHtmlfInstructions").textContent =
-      drink.strInstructions || "Not available";
+      drink.strInstructions;
 
     const itemsFdList = document.getElementById("inHtmlfItemsFd");
     itemsFdList.innerHTML = "";
