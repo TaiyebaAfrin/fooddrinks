@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drinks Store Information </title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light py-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="d-flex gap-2 mb-3">
+            <input
+              type="text"
+              id="searchInput"
+              class="form-control"
+              placeholder="Search for brinks..."
+              style="max-width: 300px"
+            />
+            <button id="searchBtn" class="btn btn-primary">Search</button>
+          </div>
+          <div
+            id="cFdDrinkContainer"
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+          ></div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h2 class="h5 mb-0">My Chart</h2>
+                <div class="fd-box-count" id="fdBoxCount">0</div>
+              </div>
+              <div id="fdBoxItems"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="detailsInHtmlf" class="inHtmlf">
+      <div class="inHtmlf-content">
+        <span class="inHtmlf-close-btn">&times;</span>
+        <div class="border-bottom mb-3 pb-2">
+          <h2 id="inHtmlfDrinkName" class="h4"></h2>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <img
+              id="inHtmlfDrinkImage"
+              src=""
+              alt=""
+              class="inHtmlf-image img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
